@@ -1,0 +1,56 @@
+:root {
+    --tt-navy: #142E40;
+    --tt-blue: #126D8C;
+    --tt-blue-hover: #0E5B76;
+    --tt-blue-grey: #C6D6DF;
+    --tt-light-bg: #F3F8FA;
+    --tt-light-blue: #E7F3F7;
+    --tt-white: #FFFFFF;
+    --tt-text: #142E40;
+    --tt-muted: #6F8798;
+    --tt-border: #DCE7EC;
+    --tt-success: #18845B;
+    --tt-success-bg: #EAF5EF;
+    --tt-warning: #B86A18;
+    --tt-warning-bg: #FFF4E6;
+}
+/* =================================
+   TRAVELTALES - GLOBAL STYLES
+================================= */
+
+/* 1. Universal Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. HTML Styling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 3. Body Styling */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+  line-height: 1.6;
+}
+
+/* 4. Images */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* 5. Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 6. Buttons */
+button {
+  cursor: pointer;
+}

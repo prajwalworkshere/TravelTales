@@ -1,0 +1,401 @@
+
+/* =========================================
+   CREATE BLOG PAGE
+========================================= */
+
+.create-blog-page {
+    min-height: 100vh;
+    background: #f5f8f9;
+    padding: 55px 20px;
+    color: #183344;
+    font-family: inherit;
+}
+
+.create-blog-container {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px 45px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 35px rgba(24, 51, 68, 0.08);
+    box-sizing: border-box;
+}
+
+/* =========================================
+   BACK BUTTON
+========================================= */
+
+.create-blog-container .back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    background: #ffffff;
+    color: #087e8b;
+    border: 1px solid #087e8b;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.create-blog-container .back-btn:hover {
+    background: #087e8b;
+    color: #ffffff;
+    transform: translateX(-3px);
+}
+
+/* =========================================
+   PAGE HEADING
+========================================= */
+
+.create-blog-heading {
+    text-align: center;
+    margin: 25px 0 35px;
+}
+
+.create-blog-heading h1 {
+    color: #183344;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.create-blog-heading p {
+    color: #71828b;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* =========================================
+   FORM LAYOUT
+========================================= */
+
+.create-blog-form {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.create-blog-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    min-width: 0;
+}
+
+.create-blog-form .form-group label {
+    color: #183344;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* =========================================
+   INPUTS, SELECTS AND TEXTAREAS
+========================================= */
+
+.create-blog-page .create-blog-form .form-group input:not([type="file"]),
+.create-blog-page .create-blog-form .form-group select,
+.create-blog-page .create-blog-form .form-group textarea {
+    display: block;
+    width: 100%;
+    min-height: 46px;
+    padding: 12px 15px;
+    border: 1px solid #dce4e7;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #183344;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.create-blog-page .create-blog-form .form-group input:focus,
+.create-blog-page .create-blog-form .form-group select:focus,
+.create-blog-page .create-blog-form .form-group textarea:focus {
+    border-color: #087e8b;
+    box-shadow: 0 0 0 3px rgba(8, 126, 139, 0.12);
+}
+
+.create-blog-form .form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+    line-height: 1.7;
+}
+
+.create-blog-form .form-group textarea#story {
+    min-height: 190px;
+}
+
+/* =========================================
+   TWO-COLUMN ROW
+========================================= */
+
+.create-blog-form .form-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+/* =========================================
+   FILE INPUTS
+========================================= */
+
+.create-blog-form .form-group input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px dashed #a9c3c8;
+    border-radius: 8px;
+    background: #f8fbfc;
+    color: #526b75;
+    font-size: 13px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.create-blog-form .form-group input[type="file"]:hover {
+    border-color: #087e8b;
+    background: #f0f9fa;
+}
+
+.create-blog-form .form-group input[type="file"]::file-selector-button {
+    padding: 8px 13px;
+    margin-right: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #e1f1f2;
+    color: #087e8b;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* =========================================
+   CHARACTER COUNTS
+========================================= */
+
+.create-blog-form .character-count {
+    margin: 0;
+    color: #84949b;
+    font-size: 12px;
+    text-align: right;
+}
+
+/* =========================================
+   IMAGE PREVIEWS
+========================================= */
+
+.create-blog-form .image-preview {
+    margin-top: 10px;
+    padding: 10px;
+    width: fit-content;
+    max-width: 100%;
+    border: 1px solid #e5edef;
+    border-radius: 9px;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+
+.create-blog-form .image-preview img {
+    display: block;
+    width: 200px;
+    max-width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 7px;
+    margin-bottom: 8px;
+}
+
+.create-blog-form .image-preview p {
+    margin: 0;
+    color: #71828b;
+    font-size: 12px;
+    overflow-wrap: anywhere;
+}
+
+.create-blog-form .additional-images-preview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.create-blog-form .additional-images-preview .image-preview {
+    width: 170px;
+}
+
+.create-blog-form .additional-images-preview .image-preview img {
+    width: 100%;
+    height: 110px;
+}
+
+/* =========================================
+   REMOVE IMAGE BUTTON
+========================================= */
+
+.create-blog-page .create-blog-form .remove-image-btn {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 7px 12px;
+    background: #fff0f0;
+    color: #d93636;
+    border: 1px solid #f0caca;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.create-blog-page .create-blog-form .remove-image-btn:hover {
+    background: #d93636;
+    color: #ffffff;
+    border-color: #d93636;
+}
+
+/* =========================================
+   FORM ACTION BUTTONS
+========================================= */
+
+.create-blog-form .form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    margin-top: 12px;
+    padding-top: 22px;
+    border-top: 1px solid #edf1f2;
+}
+
+.create-blog-page .create-blog-form .draft-btn,
+.create-blog-page .create-blog-form .publish-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 145px;
+    min-height: 46px;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+/* Cancel Button */
+
+.create-blog-page .create-blog-form .draft-btn {
+    background: #ffffff;
+    color: #087e8b;
+    border: 1px solid #087e8b;
+}
+
+.create-blog-page .create-blog-form .draft-btn:hover {
+    background: #e8f4f4;
+    transform: translateY(-2px);
+}
+
+/* Submit Button */
+
+.create-blog-page .create-blog-form .publish-btn {
+    background: #087e8b;
+    color: #ffffff;
+    border: 1px solid #087e8b;
+    box-shadow: 0 4px 12px rgba(8, 126, 139, 0.18);
+}
+
+.create-blog-page .create-blog-form .publish-btn:hover {
+    background: #066873;
+    border-color: #066873;
+    box-shadow: 0 6px 16px rgba(8, 126, 139, 0.25);
+    transform: translateY(-2px);
+}
+
+.create-blog-page .create-blog-form .draft-btn:disabled,
+.create-blog-page .create-blog-form .publish-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* =========================================
+   REVIEW NOTE
+========================================= */
+
+.create-blog-form .blog-review-note {
+    margin: 0;
+    padding: 12px 15px;
+    background: #f0f8f9;
+    color: #52717a;
+    border-left: 3px solid #087e8b;
+    border-radius: 5px;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 768px) {
+    .create-blog-page {
+        padding: 30px 15px;
+    }
+
+    .create-blog-container {
+        padding: 30px 25px;
+    }
+
+    .create-blog-heading h1 {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 600px) {
+    .create-blog-page {
+        padding: 20px 10px;
+    }
+
+    .create-blog-container {
+        padding: 23px 17px;
+        border-radius: 10px;
+    }
+
+    .create-blog-heading {
+        margin: 22px 0 28px;
+    }
+
+    .create-blog-heading h1 {
+        font-size: 24px;
+    }
+
+    .create-blog-heading p {
+        font-size: 13px;
+    }
+
+    .create-blog-form .form-row {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .create-blog-form .form-buttons {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+
+    .create-blog-page .create-blog-form .draft-btn,
+    .create-blog-page .create-blog-form .publish-btn {
+        width: 100%;
+    }
+
+    .create-blog-form .additional-images-preview .image-preview {
+        width: calc(50% - 8px);
+    }
+
+    .blog-review-note {
+        text-align: left;
+    }
+}

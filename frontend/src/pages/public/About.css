@@ -1,0 +1,451 @@
+
+/* =========================================
+   TRAVELTALES - ABOUT PAGE
+   NAVY AND TEAL THEME
+========================================= */
+
+.about-page {
+    width: 100%;
+    overflow: hidden;
+}
+
+.about-page .section-padding {
+    padding: 85px 0;
+}
+
+
+/* =========================================
+   ABOUT HERO
+========================================= */
+
+.about-hero {
+    min-height: 440px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=2000&q=90');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: #ffffff;
+}
+
+.about-hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        90deg,
+        rgba(20, 46, 64, 0.92),
+        rgba(20, 46, 64, 0.68),
+        rgba(20, 46, 64, 0.20)
+    );
+}
+
+.about-hero-content {
+    position: relative;
+    z-index: 1;
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.about-label {
+    display: inline-block;
+    color: #C6D6DF;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.about-hero h1 {
+    font-size: clamp(36px, 5vw, 58px);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.about-hero h1 span {
+    color: #C6D6DF;
+}
+
+.about-hero p {
+    max-width: 580px;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.about-hero-link {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1px solid #C6D6DF;
+    padding-bottom: 6px;
+    transition: color 0.3s ease;
+}
+
+.about-hero-link:hover {
+    color: #C6D6DF;
+}
+
+
+/* =========================================
+   WHO WE ARE
+========================================= */
+
+.about-intro {
+    background-color: #ffffff;
+}
+
+.about-image-wrapper {
+    position: relative;
+    padding: 0 25px 25px 0;
+}
+
+.about-main-image {
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.about-image-wrapper::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 65%;
+    height: 65%;
+    border-right: 5px solid #126D8C;
+    border-bottom: 5px solid #126D8C;
+    border-radius: 0 0 8px 0;
+    pointer-events: none;
+}
+
+.about-text-content .section-label,
+.section-heading .section-label {
+    color: #126D8C;
+}
+
+.about-text-content h2,
+.section-heading h2 {
+    color: #142E40;
+    font-size: clamp(28px, 4vw, 38px);
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.about-text-content h2 span,
+.section-heading h2 span {
+    color: #126D8C;
+}
+
+.about-text-content p {
+    color: #6F8798;
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 16px;
+}
+
+.about-primary-btn {
+    display: inline-block;
+    padding: 13px 23px;
+    background-color: #126D8C;
+    color: #ffffff;
+    border: 1px solid #126D8C;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.about-primary-btn:hover {
+    background-color: #0E5B76;
+    border-color: #0E5B76;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   SECTION HEADINGS
+========================================= */
+
+.section-heading {
+    max-width: 720px;
+    margin: 0 auto 45px;
+}
+
+.section-heading p {
+    color: #6F8798;
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   MISSION AND VISION
+========================================= */
+
+.mission-section {
+    background-color: #F3F8FA;
+}
+
+.mission-card {
+    height: 100%;
+    padding: 40px 35px;
+    background-color: #ffffff;
+    border: 1px solid #DCE7EC;
+    border-radius: 8px;
+    border-top: 4px solid #126D8C;
+    box-shadow: 0 5px 20px rgba(20, 46, 64, 0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vision-card {
+    border-top-color: #142E40;
+}
+
+.mission-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(20, 46, 64, 0.10);
+}
+
+.mission-icon {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E7F3F7;
+    border-radius: 50%;
+    font-size: 28px;
+    margin-bottom: 22px;
+}
+
+.mission-card h3 {
+    color: #142E40;
+    font-size: 23px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.mission-card p {
+    color: #6F8798;
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   WHY TRAVELTALES
+========================================= */
+
+.why-section {
+    background-color: #ffffff;
+}
+
+.why-card {
+    height: 100%;
+    padding: 30px 25px;
+    background-color: #F3F8FA;
+    border: 1px solid #DCE7EC;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(20, 46, 64, 0.09);
+}
+
+.why-icon {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E7F3F7;
+    border-radius: 50%;
+    font-size: 25px;
+    margin-bottom: 18px;
+}
+
+.why-card h3 {
+    color: #142E40;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.why-card p {
+    color: #6F8798;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   ABOUT CTA
+========================================= */
+
+.about-cta {
+    position: relative;
+    padding: 85px 0;
+
+    background-image:
+        linear-gradient(
+            rgba(20, 46, 64, 0.94),
+            rgba(20, 46, 64, 0.94)
+        ),
+        url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1800&q=85');
+
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+}
+
+.about-cta-content {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.about-cta .about-label {
+    color: #C6D6DF;
+}
+
+.about-cta h2 {
+    font-size: clamp(30px, 4vw, 44px);
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.about-cta p {
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+.about-cta-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.about-secondary-btn {
+    display: inline-block;
+    padding: 13px 23px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.about-secondary-btn:hover {
+    background-color: #ffffff;
+    color: #142E40;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 991.98px) {
+
+    .about-page .section-padding {
+        padding: 70px 0;
+    }
+
+    .about-main-image {
+        height: 380px;
+    }
+
+    .about-text-content {
+        padding-top: 5px;
+    }
+
+}
+
+@media (max-width: 767.98px) {
+
+    .about-page .section-padding {
+        padding: 60px 0;
+    }
+
+    .about-hero {
+        min-height: 390px;
+    }
+
+    .about-hero-content {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    .about-hero h1 {
+        font-size: 38px;
+    }
+
+    .about-hero p {
+        font-size: 14px;
+    }
+
+    .about-main-image {
+        height: 330px;
+    }
+
+
+    .section-heading {
+        margin-bottom: 30px;
+    }
+
+    .mission-card {
+        padding: 30px 25px;
+    }
+
+    .about-cta {
+        padding: 65px 0;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .about-hero h1 {
+        font-size: 32px;
+    }
+
+    .about-image-wrapper {
+        padding-right: 15px;
+        padding-bottom: 15px;
+    }
+
+    .about-main-image {
+        height: 280px;
+    }
+
+
+    .about-cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

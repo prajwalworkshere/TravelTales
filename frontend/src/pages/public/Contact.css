@@ -1,0 +1,396 @@
+
+/* =========================================
+   TRAVELTALES - CONTACT PAGE
+   NAVY AND TEAL THEME
+========================================= */
+
+
+/* =========================================
+   1. CONTACT HERO
+========================================= */
+
+.contact-hero {
+    min-height: 340px;
+
+    background:
+        linear-gradient(
+            rgba(20, 46, 64, 0.88),
+            rgba(20, 46, 64, 0.88)
+        ),
+        url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e')
+        center/cover no-repeat;
+}
+
+.contact-hero-overlay {
+    min-height: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 20px;
+}
+
+.contact-eyebrow {
+    display: inline-block;
+    color: #C6D6DF;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.contact-hero h1 {
+    color: #ffffff;
+    font-size: clamp(36px, 5vw, 56px);
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.contact-hero p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #E7F3F7;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   2. MAIN CONTACT SECTION
+========================================= */
+
+.contact-section {
+    padding: 90px 0;
+    background-color: #ffffff;
+}
+
+.contact-section-label {
+    display: inline-block;
+    color: #126D8C;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+
+.contact-info h2 {
+    color: #142E40;
+    font-size: clamp(28px, 4vw, 36px);
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.contact-description {
+    color: #6F8798;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   3. CONTACT INFORMATION CARDS
+========================================= */
+
+.contact-info-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 20px;
+    margin-bottom: 16px;
+
+    background-color: #F3F8FA;
+    border: 1px solid #DCE7EC;
+    border-radius: 10px;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.contact-info-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px rgba(20, 46, 64, 0.08);
+}
+
+.contact-icon {
+    min-width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #E7F3F7;
+    color: #126D8C;
+
+    border-radius: 50%;
+    font-size: 21px;
+}
+
+.contact-info-card h5 {
+    color: #142E40;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.contact-info-card p {
+    color: #6F8798;
+    font-size: 14px;
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   4. CONTACT NOTE
+========================================= */
+
+.contact-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 25px;
+    padding: 16px;
+
+    background-color: #E7F3F7;
+    border-left: 4px solid #126D8C;
+    border-radius: 5px;
+}
+
+.contact-note i {
+    color: #126D8C;
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+.contact-note p {
+    color: #142E40;
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   5. CONTACT FORM WRAPPER
+========================================= */
+
+.contact-form-wrapper {
+    height: 100%;
+    padding: 40px;
+
+    background-color: #F3F8FA;
+    border: 1px solid #DCE7EC;
+    border-radius: 14px;
+}
+
+.contact-form-heading h3 {
+    color: #142E40;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.contact-form-heading p {
+    color: #6F8798;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   6. FORM INPUTS
+========================================= */
+
+.contact-form-wrapper .form-label {
+    color: #142E40;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+
+.contact-input {
+    min-height: 48px;
+    padding: 12px 15px;
+
+    border: 1px solid #DCE7EC;
+    border-radius: 7px;
+
+    background-color: #ffffff;
+    color: #142E40;
+    font-size: 14px;
+
+    transition: border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.contact-input:focus {
+    border-color: #126D8C;
+    box-shadow: 0 0 0 3px rgba(18, 109, 140, 0.14);
+}
+
+.contact-input::placeholder {
+    color: #9AAAB5;
+}
+
+.contact-textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.character-count {
+    margin-top: 7px;
+    color: #6F8798;
+    font-size: 12px;
+    text-align: right;
+}
+
+
+/* =========================================
+   7. SUBMIT BUTTON
+========================================= */
+
+.contact-submit-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 13px 28px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #126D8C;
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.contact-submit-btn:hover {
+    background-color: #0E5B76;
+    transform: translateY(-2px);
+}
+
+.contact-submit-btn i {
+    font-size: 17px;
+}
+
+.form-demo-note {
+    color: #6F8798;
+    font-size: 12px;
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   8. SUCCESS MESSAGE
+========================================= */
+
+.contact-form-wrapper .alert-success {
+    background-color: #EAF5EF;
+    border-color: #C7E5D3;
+    color: #18845B;
+}
+
+
+/* =========================================
+   9. BOTTOM CTA
+========================================= */
+
+.contact-bottom-cta {
+    padding: 75px 20px;
+    background-color: #142E40;
+}
+
+.contact-bottom-cta h2 {
+    color: #ffffff;
+    font-size: clamp(26px, 4vw, 36px);
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.contact-bottom-cta p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    color: #C6D6DF;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.contact-explore-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 26px;
+
+    border-radius: 6px;
+    background-color: #126D8C;
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.contact-explore-btn:hover {
+    background-color: #0E5B76;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   10. RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 991.98px) {
+
+    .contact-section {
+        padding: 65px 0;
+    }
+
+    .contact-info {
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .contact-hero,
+    .contact-hero-overlay {
+        min-height: 300px;
+    }
+
+    .contact-hero-overlay {
+        padding: 55px 15px;
+    }
+
+    .contact-hero p {
+        font-size: 15px;
+    }
+
+    .contact-section {
+        padding: 50px 0;
+    }
+
+    .contact-form-wrapper {
+        padding: 25px 18px;
+    }
+
+    .contact-info-card {
+        padding: 16px;
+    }
+
+    .contact-bottom-cta {
+        padding: 55px 15px;
+    }
+
+}
